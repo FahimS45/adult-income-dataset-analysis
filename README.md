@@ -1,7 +1,3 @@
-Here's a structured and organized version of your results that you can include in the README file for your project on Adult Income Dataset Analysis. This format includes each experiment in a clear, organized table layout and provides a summary for easy readability.
-
----
-
 # Adult Income Dataset Analysis
 
 This project explores various machine learning models to classify income levels in the Adult Income Dataset. Multiple experiments were conducted to improve model performance by applying different techniques such as data preprocessing, feature selection, and hyperparameter optimization. Here are the details of each experiment and the results achieved.
@@ -85,20 +81,81 @@ This project explores various machine learning models to classify income levels 
 | KNN                      | 0.772948 | 0.843819  | 0.772948 | 0.788151 |
 | Bagging                  | 0.832594 | 0.837163  | 0.832594 | 0.834584 |
 
-... *(add additional experiment tables here following this format)* ...
+### 5. Feature Selection (RFECV)
+| Model                     | Accuracy | Precision | Recall  | F1 Score |
+|---------------------------|----------|-----------|---------|----------|
+| Logistic Regression       | 0.765918 | 0.814906  | 0.765918| 0.779392 |
+| Support Vector Classifier | 0.810210 | 0.850432  | 0.810210| 0.820488 |
+| Decision Tree             | 0.795469 | 0.815944  | 0.795469| 0.802685 |
+| Random Forest             | 0.842763 | 0.851373  | 0.842763| 0.846056 |
+| AdaBoost                  | 0.824268 | 0.846905  | 0.824268| 0.831263 |
+| GradientBoost             | 0.845219 | 0.855734  | 0.845219| 0.849026 |
+| XGBoost                   | 0.857640 | 0.864996  | 0.857640| 0.860421 |
+| LightGBM                  | 0.858527 | 0.865529  | 0.858527| 0.861195 |
+| Naive Bayes               | 0.795673 | 0.822725  | 0.795673| 0.804361 |
+| KNN                       | 0.791988 | 0.842357  | 0.791988| 0.804332 |
+| Bagging                   | 0.819900 | 0.827755  | 0.819900| 0.823138 |
 
----
+### 6. Outliers Detection and Removal
+| Model                     | Accuracy | Precision | Recall  | F1 Score |
+|---------------------------|----------|-----------|---------|----------|
+| Logistic Regression       | 0.747355 | 0.814517  | 0.747355| 0.763830 |
+| Support Vector Classifier | 0.747355 | 0.742015  | 0.747355| 0.744510 |
+| Decision Tree             | 0.736709 | 0.739957  | 0.736709| 0.738278 |
+| Random Forest             | 0.804067 | 0.798308  | 0.804067| 0.800728 |
+| AdaBoost                  | 0.814278 | 0.805641  | 0.814278| 0.809576 |
+| GradientBoost             | 0.815192 | 0.812191  | 0.815192| 0.813304 |
+| XGBoost                   | 0.816073 | 0.815036  | 0.816073| 0.815412 |
+| LightGBM                  | 0.815824 | 0.811012  | 0.815824| 0.812966 |
+| Naive Bayes               | 0.748117 | 0.747682  | 0.748117| 0.747707 |
+| KNN                       | 0.751618 | 0.746730  | 0.751618| 0.749018 |
+| Bagging                   | 0.786267 | 0.780326  | 0.786267| 0.783034 |
+
+### 7. Stratified K-Fold Cross Validation
+| Model                     | Accuracy | Precision | Recall  | F1 Score |
+|---------------------------|----------|-----------|---------|----------|
+| Logistic Regression       | 0.811822 | 0.797523  | 0.811822| 0.794325 |
+| Support Vector Classifier | 0.832869 | 0.822994  | 0.832869| 0.818763 |
+| Decision Tree             | 0.801626 | 0.803318  | 0.801626| 0.802365 |
+| Random Forest             | 0.842635 | 0.836275  | 0.842635| 0.838021 |
+| AdaBoost                  | 0.846751 | 0.839177  | 0.846751| 0.839635 |
+| GradientBoost             | 0.855391 | 0.848832  | 0.855391| 0.848786 |
+| XGBoost                   | 0.859035 | 0.854142  | 0.859035| 0.855308 |
+| LightGBM                  | 0.859609 | 0.854462  | 0.859609| 0.855486 |
+| Naive Bayes               | 0.809160 | 0.796251  | 0.809160| 0.794261 |
+| KNN                       | 0.824434 | 0.812969  | 0.824434| 0.812489 |
+| Bagging                   | 0.824802 | 0.816545  | 0.824802| 0.818914 |
+
+### 8. Hyperparameter Optimization
+| Model                     | Accuracy | Precision | Recall  | F1 Score |
+|---------------------------|----------|-----------|---------|----------|
+| Logistic Regression       | 0.804136 | 0.790233  | 0.804136| 0.793014 |
+| Support Vector Classifier | 0.783184 | 0.757192  | 0.783184| 0.751825 |
+| Decision Tree             | 0.818126 | 0.805679  | 0.818126| 0.806548 |
+| Random Forest             | 0.830137 | 0.819609  | 0.830137| 0.818928 |
+| AdaBoost                  | 0.798062 | 0.783529  | 0.798062| 0.786908 |
+| GradientBoost             | 0.803931 | 0.789969  | 0.803931| 0.792754 |
+| XGBoost                   | 0.802634 | 0.787906  | 0.802634| 0.790509 |
+| LightGBM                  | 0.811984 | 0.798160  | 0.811984| 0.799163 |
+| Naive Bayes               | 0.757388 | 0.807760  | 0.757388| 0.771457 |
+| KNN                       | 0.820515 | 0.815718  | 0.820515| 0.817707 |
+| Bagging                   | 0.819081 | 0.806236  | 0.819081| 0.805371 |
+
+### 9. Ensemble Learning - Soft Voting
+| Model             | Accuracy | Precision | Recall  | F1 Score |
+|-------------------|----------|-----------|---------|----------|
+| Ensemble Learning | 0.782229 | 0.784140  | 0.782229| 0.783153 |
 
 ### 10. Final Experiment Based on Best Strategies
-| Model                    | Accuracy | Precision | Recall | F1 Score |
-|--------------------------|----------|-----------|--------|----------|
-| LightGBM                 | 0.873981 | 0.869506  | 0.873981 | 0.869687 |
-| XGBoost                  | 0.872241 | 0.867833  | 0.872241 | 0.868418 |
-| GradientBoost            | 0.868597 | 0.863473  | 0.868597 | 0.863036 |
-| Random Forest            | 0.860223 | 0.854733  | 0.860223 | 0.855550 |
-| AdaBoost                 | 0.860775 | 0.855092  | 0.860775 | 0.855657 |
-| Ensemble Learning        | 0.873736 | 0.869167  | 0.873736 | 0.869078 |
+| Model                     | Accuracy | Precision | Recall  | F1 Score |
+|---------------------------|----------|-----------|---------|----------|
+| LightGBM                  | 0.873981 | 0.869506  | 0.873981| 0.869687 |
+| XGBoost                   | 0.872241 | 0.867833  | 0.872241| 0.868418 |
+| GradientBoost             | 0.868597 | 0.863473  | 0.868597| 0.863036 |
+| Random Forest             | 0.860223 | 0.854733  | 0.860223| 0.855550 |
+| AdaBoost                  | 0.860775 | 0.855092  | 0.860775| 0.855657 |
+| Ensemble Learning         | 0.873736 | 0.869167  | 0.873736| 0.869078 | 
 
 ---
 
-These results show the impact of each experiment on model performance, indicating that methods like **hyperparameter optimization, feature selection, and ensemble learning** contributed significantly to improving classification accuracy and other metrics.
+These results demonstrate the impact of each experimental approach on model performance, highlighting how techniques such as hyperparameter optimization, feature selection, and ensemble learning effectively enhanced classification accuracy and other key metrics.
